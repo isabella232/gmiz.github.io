@@ -21,9 +21,10 @@
     margin: 0;
 }
 
+
 #topbar {
     position: relative;
-    background-color: #181818;
+    background-color: rgba(24, 24, 24, .6);
     text-align: right;
     border-bottom: 5px solid #0179ff;
     height: 100px;
@@ -61,12 +62,24 @@
     color: #ffffff;
 }
 
+video {
+    display: block;
+}
+
+footer {
+    padding: 30px;
+    background-color: #0f0f0f;
+    color: #555555;
+    font-size: 1.1em;
+    text-align: center;
+}
+
 ::-webkit-scrollbar {
     width: 20px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #111111;
+    background: #0f0f0f;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -76,5 +89,5 @@
 
 ::-webkit-scrollbar-thumb:hover {
 /*  background: #0179ff; */
-    background: #ffffff;
+    background: #888888;
 }

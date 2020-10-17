@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Gmiz - Professional programmer and designer</title>
     <link rel="icon" href="favicon.ico" type="image/ico"/>
     <link rel="stylesheet" href="main.css">
   </head>
+
   <body>
-    <video width="100%" autoplay>
+    <!-- home screen video -->
+    <video width="100%" muted loop id="homevid">
       <source src="home.mp4" type="video/mp4">
-      not working
     </video>
+    <script>
+        document.getElementById('homevid').play();
+    </script>
+
+    <!-- footer with info -->
+    <footer>
+      <p>Copyright © Gmiz 2020</p>
+    </footer>
+
+    <!-- sticky navbar -->
     <div id="topsticky">
       <div id="topbar">
         <img id="logo" src="mlogo.png" alt="Gmiz logo">
