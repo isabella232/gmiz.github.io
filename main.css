@@ -1,16 +1,16 @@
 @font-face {
-    font-family: nunito;
+    font-family: mynunito;
     src: url("fonts/Nunito-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: oswald;
+    font-family: myoswald;
     src: url("fonts/Oswald-Regular.ttf");
 }
 
 * {
     margin: 0;
-    font-family: nunito;
+    font-family: mynunito;
 }
 
 #logo {
@@ -84,18 +84,19 @@
 }
 
 #title-top {
-    font: 6em oswald;
+    font: 6em myoswald;
     color: #ffffff;
 }
 
 #title-bottom {
     opacity: 70%;
-    font: 2em nunito;
+    font: 2em mynunito;
     color: #ffffff;
     transform: translateY(-10px);
 }
 
 #head-container {
+    background-color: #000000;
     position: static;
     overflow: hidden;
     width: 100%;
