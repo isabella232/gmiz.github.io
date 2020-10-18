@@ -9,12 +9,18 @@
 
   <body>
     <!-- home screen video -->
-    <video width="100%" muted loop id="homevid">
-      <source src="home.mp4" type="video/mp4">
-    </video>
-    <script>
-        document.getElementById('homevid').play();
-    </script>
+    <div id="head-container">
+      <video width="100%" muted loop id="homevid">
+        <source src="home.mp4" type="video/mp4">
+      </video>
+      <script>
+          document.getElementById('homevid').play();
+      </script>
+      <div id="title-container">
+        <div id="title-top">Welcome to my site!</div>
+        <div id="title-bottom">Programming and design services, tutorials,<br>resources and more!</div>
+      </div>
+    </div>
 
     <!-- footer with info -->
     <footer>
@@ -27,7 +33,7 @@
         <img id="logo" src="mlogo.png" alt="Gmiz logo">
         <ul id="alltoplinks">
           <li class="toplink-container">
-            <a class="toplink" href="https://youtube.com">Home</a>
+            <a class="toplink" href="https://gmiz.github.io">Home</a>
           </li>
           <li class="toplink-container">
             <a class="toplink" href="https://youtube.com">Programming</a>
