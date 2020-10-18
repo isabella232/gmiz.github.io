@@ -1,3 +1,25 @@
+@keyframes slideup-title-top {
+    0% {
+        opacity: 0%;
+        transform: translate(0, 80%);
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slideup-title-bottom {
+    0% {
+        opacity: 0%;
+        transform: translate(0, 80%);
+    }
+    100% {
+        opacity: 70%;
+        transform: translate(0, -10px);
+    }
+}
+
 @font-face {
     font-family: mynunito;
     src: url("fonts/Nunito-SemiBold.ttf");
@@ -64,7 +86,7 @@
     border-radius: 100px;
     text-decoration: none;
     color: #bbbbbb;
-    transition: background-color .2s, color .2s;
+    transition: background-color .3s, color .3s;
     font-size: 1.1em;
 }
 
@@ -84,11 +106,15 @@
 }
 
 #title-top {
+    animation: 1s ease 0s 1 slideup-title-top;
+    animation-fill-mode: backwards;
     font: 6em myoswald;
     color: #ffffff;
 }
 
 #title-bottom {
+    animation: 1s ease .3s 1 slideup-title-bottom;
+    animation-fill-mode: backwards;
     opacity: 70%;
     font: 2em mynunito;
     color: #ffffff;
