@@ -61,7 +61,7 @@
     padding: 10px 25px;
     margin-right: 8px;
     background-color: none;
-    border-radius: 20px;
+    border-radius: 100px;
     text-decoration: none;
     color: #bbbbbb;
     transition: background-color .2s, color .2s;
@@ -96,7 +96,6 @@
 }
 
 #head-container {
-    background-color: red;
     position: static;
     overflow: hidden;
     width: 100%;
@@ -144,4 +143,21 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
 /*  background: #0179ff; */
     background: #888888;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+::-moz-selection {
+  background: rgba(50, 50, 50, .6);
+}
+
+::selection {
+  background: rgba(50, 50, 50, .6);
 }
