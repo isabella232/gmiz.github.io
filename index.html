@@ -4,16 +4,28 @@
   <head>
     <title>Gmiz - Professional programmer and designer</title>
     <link rel="shortcut icon" href="favicon.ico?" type="image/ico">
+    <script>
+        document.body.classList.add('js-loading');
+
+        window.addEventListener("load", showPage);
+
+        function showPage() {
+            document.body.classList.remove('js-loading');
+        }
+
+        //var img = document.querySelector("img");
+    </script>
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
   </head>
 
   <body>
+    <!-- black fade div -->
+    <div id="blackdiv"></div>
+
     <!-- home screen video -->
     <div id="head-container">
-      <video class="noselect" width="100%" autoplay muted loop id="homevid">
-        <source src="home.mp4" type="video/mp4">
-      </video>
+      <video class="noselect" width="100%" preload="auto" src="home.mp4" autoplay muted loop id="homevid"></video>
       <script>
           document.getElementById('homevid').play();
       </script>

@@ -1,0 +1,84 @@
+/* ----------------------------- */
+/* Animations for the home page. */
+/* ----------------------------- */
+
+#topsticky {
+    animation: 1s ease .5s 1 topbar-down;
+    animation-fill-mode: backwards;
+}
+
+.toplink {
+    animation: 1s ease 1.5s 1 link-show;
+    animation-fill-mode: backwards;
+}
+
+#title-top {
+    animation: 1s ease 2s 1 slideup-title-top;
+    animation-fill-mode: backwards;
+}
+
+#title-bottom {
+    animation: 1s ease 2.5s 1 slideup-title-bottom;
+    animation-fill-mode: backwards;
+}
+
+#blackdiv {
+    animation: 1s ease 0s 1 fade-out;
+    animation-fill-mode: both;
+}
+
+@keyframes link-show {
+    0% {
+        color: rgba(187, 187, 187, 0);
+    }
+    100% {
+        color: rgba(187, 187, 187, 1);
+    }
+}
+
+@keyframes topbar-down {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        background: rgba(0, 0, 0, 1);
+    }
+    100% {
+        background: rgba(0, 0, 0, 0);
+        visibility: hidden;
+    }
+}
+
+@keyframes slideup-title-top {
+    0% {
+        color: rgba(255, 255, 255, 0);
+        transform: translate(0, 80%);
+    }
+    100% {
+        color: rgba(255, 255, 255, 1);
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slideup-title-bottom {
+    0% {
+        color: rgba(255, 255, 255, 0);
+        transform: translate(0, 80%);
+    }
+    100% {
+        color: rgba(255, 255, 255, .7);
+        transform: translate(0, -10px);
+    }
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
+}
