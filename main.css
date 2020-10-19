@@ -1,38 +1,38 @@
 @keyframes slideup-title-top {
     0% {
-        opacity: 0%;
+        color: rgba(255, 255, 255, 0);
         transform: translate(0, 80%);
     }
     100% {
-        opacity: 100%;
+        color: rgba(255, 255, 255, 1);
         transform: translate(0, 0);
     }
 }
 
 @keyframes slideup-title-bottom {
     0% {
-        opacity: 0%;
+        color: rgba(255, 255, 255, 0);
         transform: translate(0, 80%);
     }
     100% {
-        opacity: 70%;
+        color: rgba(255, 255, 255, .7);
         transform: translate(0, -10px);
     }
 }
 
 @font-face {
-    font-family: mynunito;
+    font-family: nunito;
     src: url("fonts/Nunito-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: myoswald;
+    font-family: oswald;
     src: url("fonts/Oswald-Regular.ttf");
 }
 
 * {
     margin: 0;
-    font-family: mynunito;
+    font-family: nunito;
 }
 
 #logo {
@@ -106,19 +106,18 @@
 }
 
 #title-top {
-    animation: 1s ease 0s 1 slideup-title-top;
+    animation: 1s ease 1s 1 slideup-title-top;
     animation-fill-mode: backwards;
-    font: 6em myoswald;
-    color: #ffffff;
+    font: 6em oswald;
+    color: rgba(255, 255, 255, 1);
 }
 
 #title-bottom {
-    animation: 1s ease .3s 1 slideup-title-bottom;
+    animation: 1s ease 1.3s 1 slideup-title-bottom;
     animation-fill-mode: backwards;
-    opacity: 70%;
-    font: 2em mynunito;
-    color: #ffffff;
+    font: 2em nunito;
     transform: translateY(-10px);
+    color: rgba(255, 255, 255, .7);
 }
 
 #head-container {
