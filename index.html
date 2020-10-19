@@ -4,28 +4,27 @@
   <head>
     <title>Gmiz - Professional programmer and designer</title>
     <link rel="shortcut icon" href="favicon.ico?" type="image/ico">
-    <script>
-        document.body.classList.add('js-loading');
-
-        window.addEventListener("load", showPage);
-
-        function showPage() {
-            document.body.classList.remove('js-loading');
-        }
-
-        //var img = document.querySelector("img");
-    </script>
-    <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
+    <!-- don't show animations until everything's loaded -->
+    <script>
+        document.body.classList.add('js-loading');
+        window.addEventListener("load", showPage);
+        function showPage() {
+            sleep(1000);
+            document.body.classList.remove('js-loading');
+        }
+    </script>
+
     <!-- black fade div -->
     <div id="blackdiv"></div>
 
     <!-- home screen video -->
     <div id="head-container">
-      <video class="noselect" width="100%" preload="auto" src="home.mp4" autoplay muted loop id="homevid"></video>
+      <video id="homevid" class="noselect" width="100%" preload="auto" src="home.mp4" autoplay muted loop></video>
       <script>
           document.getElementById('homevid').play();
       </script>
