@@ -2,6 +2,11 @@
 /* Animations for the home page. */
 /* ----------------------------- */
 
+#blackdiv {
+    animation: 1s ease 0s 1 fade-out;
+    animation-fill-mode: both;
+}
+
 #topsticky {
     animation: 1s ease .5s 1 topbar-down;
     animation-fill-mode: backwards;
@@ -22,9 +27,27 @@
     animation-fill-mode: backwards;
 }
 
-#blackdiv {
-    animation: 1s ease 0s 1 fade-out;
-    animation-fill-mode: both;
+#portfolio {
+    animation: 1s ease 2.8s 1 slideup-button;
+    animation-fill-mode: backwards;
+}
+
+#hire {
+    animation: 1s ease 3.1s 1 slideup-button;
+    animation-fill-mode: backwards;
+}
+
+@keyframes slideup-button {
+    0% {
+        border: 3px solid rgba(1, 121, 255, 0);
+        color: rgba(187, 187, 187, 0);
+        transform: translate(0, 100px);
+    }
+    100% {
+        border: 3px solid rgba(1, 121, 255, 1);
+        color: rgba(187, 187, 187, 1);
+        transform: translate(0, 0);
+    }
 }
 
 @keyframes link-show {

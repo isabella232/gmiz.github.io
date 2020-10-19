@@ -59,7 +59,11 @@
     display: inline-block;
 }
 
-.toplink:link, .toplink:active, .toplink:visited {
+.toplink:link,
+.toplink:active,
+.toplink:visited,
+#portfolio,
+#hire {
     padding: 10px 25px;
     margin-right: 8px;
     background-color: none;
@@ -70,9 +74,20 @@
     font-size: 1.1em;
 }
 
-.toplink:hover {
+.toplink:hover,
+#portfolio:hover,
+#hire:hover {
     background-color: #0179ff;
     color: #ffffff;
+}
+
+#portfolio,
+#hire {
+    background: rgba(0, 0, 0, .7);
+    display: inline-block;
+    padding: 10px 50px;
+    margin: 10px 10px;
+    border: 3px solid #0179ff;
 }
 
 #title-container {
@@ -86,7 +101,7 @@
 }
 
 #title-top {
-    font: 6em oswald;
+    font: 6.5em oswald;
     color: rgba(255, 255, 255, 1);
 }
 
