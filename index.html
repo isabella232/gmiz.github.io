@@ -3,7 +3,6 @@
 
   <head>
     <title>Gmiz - Professional programmer and designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico?" type="image/ico">
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
@@ -13,9 +12,15 @@
     <!-- don't show animations until everything's loaded -->
     <script>
         document.body.classList.add('js-loading');
-        window.addEventListener("load", showPage);
+        window.addEventListener("load", loadVideo);
+
+        function loadVideo() {
+            var video = document.getElementById('homevid');
+            video.load();
+            video.addEventListener('loadeddata', showPage);
+        }
+
         function showPage() {
-            sleep(1000);
             document.body.classList.remove('js-loading');
         }
     </script>
@@ -25,6 +30,7 @@
 
     <!-- home page video with info -->
     <div id="head-container">
+      <div id="video-blackdiv"></div>
       <video id="homevid" class="noselect" width="100%" preload="auto" src="home.mp4" autoplay muted loop></video>
       <script>
           document.getElementById('homevid').play();
