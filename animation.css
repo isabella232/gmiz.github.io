@@ -3,7 +3,7 @@
 /* ----------------------------- */
 
 #blackdiv {
-    animation: 2s ease 0s 1 fade-out;
+    animation: 1s ease 0s 1 fade-out;
     animation-fill-mode: both;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .toplink {
-    animation: 1s ease 1.5s 1 link-show;
+    animation: 1s ease 1s 1 link-show;
     animation-fill-mode: backwards;
 }
 
@@ -23,28 +23,40 @@
 }
 
 #title-bottom {
-    animation: 1s ease 2.5s 1 slideup-title-bottom;
+    animation: 1s ease 2.3s 1 slideup-title-bottom;
     animation-fill-mode: backwards;
 }
 
-#portfolio {
-    animation: 1s ease 2.8s 1 slideup-button;
+.logo-sample {
+    animation: 1s ease 2.5s 1 slideup-logo;
     animation-fill-mode: backwards;
 }
 
-#hire {
-    animation: 1s ease 3.1s 1 slideup-button;
+.dark-button {
+    animation: 1s ease 2.5s 1 slideup-button;
     animation-fill-mode: backwards;
 }
 
 #video-blackdiv {
-    animation: 4s ease 4s 1 fade-out;
+    animation: 3s ease 2.5s 1 fade-out;
     animation-fill-mode: both;
 }
 
+@keyframes slideup-logo {
+    0% {
+        visibility: hidden;
+        border: none;
+        transform: translate(0, 200px);
+    }
+    100% {
+        border: 2px solid rgba(255, 255, 255, .2);
+        transform: translate(0, 0);
+    }
+}
 
 @keyframes slideup-button {
     0% {
+        visibility: hidden;
         border: 3px solid rgba(1, 121, 255, 0);
         color: rgba(187, 187, 187, 0);
         transform: translate(0, 100px);
@@ -58,9 +70,11 @@
 
 @keyframes link-show {
     0% {
+        transform: translate(0, -100px);
         color: rgba(187, 187, 187, 0);
     }
     100% {
+        transform: translate(0, 0);
         color: rgba(187, 187, 187, 1);
     }
 }

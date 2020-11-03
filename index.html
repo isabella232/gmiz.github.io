@@ -3,8 +3,9 @@
 
   <head>
     <title>Gmiz - Professional programmer and designer</title>
-    <link rel="shortcut icon" href="favicon.ico?" type="image/ico">
-    <link rel="stylesheet" href="main.css">
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="assets/favicon.ico?" type="image/ico"/>
+    <link rel="stylesheet" href="main.css"/>
     <script src="main.js"></script>
   </head>
 
@@ -13,16 +14,6 @@
     <script>
         document.body.classList.add('js-loading');
         window.addEventListener("load", loadVideo);
-
-        function loadVideo() {
-            var video = document.getElementById('homevid');
-            video.load();
-            video.addEventListener('loadeddata', showPage);
-        }
-
-        function showPage() {
-            document.body.classList.remove('js-loading');
-        }
     </script>
 
     <!-- black fade div -->
@@ -31,15 +22,17 @@
     <!-- home page video with info -->
     <div id="head-container">
       <div id="video-blackdiv"></div>
-      <video id="homevid" class="noselect" width="100%" preload="auto" src="home.mp4" autoplay muted loop></video>
+      <video id="homevid" class="noselect" width="100%" preload="auto" src="assets/home.mp4" autoplay muted loop></video>
       <script>
           document.getElementById('homevid').play();
       </script>
-      <div id="title-container">
+    </div>
+    <div id="title-container">
+      <div id="title-text-container">
         <div id="title-top">Welcome to my site!</div>
         <div id="title-bottom">Programming and design services, tutorials,<br>resources and more!</div>
-        <a id="portfolio" href="about/portfolio">Portfolio</a>
-        <a id="hire" href="contact/hire">Hire me!</a>
+        <a class="dark-button" href="about/portfolio">Portfolio</a>
+        <a class="dark-button" href="contact/hire">Hire me!</a>
       </div>
     </div>
 
@@ -47,7 +40,7 @@
     <div class="noselect" id="topsticky">
       <div id="topbar">
         <a href="https://gmiz.github.io">
-          <img id="logo" src="mlogo.png" alt="Gmiz logo">
+          <img id="logo" src="assets/mlogo.png" alt="Gmiz logo">
         </a>
         <ul id="alltoplinks">
           <li class="toplink-container">
@@ -76,5 +69,9 @@
     <footer>
       <p class="noselect">Copyright © Gmiz 2020</p>
     </footer>
+    <script>
+        oneByOne("toplink", 1, .1);
+        oneByOne("dark-button", 3, .2);
+    </script>
   </body>
 </html>

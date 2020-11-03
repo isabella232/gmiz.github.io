@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Gmiz - Professional programmer and designer</title>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="../assets/favicon.ico?" type="image/ico"/>
+    <link rel="stylesheet" href="../main.css"/>
+    <script src="../main.js"></script>
+  </head>
+
+  <body>
+    <!-- don't show animations until everything's loaded -->
+    <script>
+        document.body.classList.add('js-loading');
+        window.addEventListener("load", loadVideo);
+    </script>
+
+    <!-- black fade div -->
+    <div id="blackdiv"></div>
+
+    <!-- home page video with info -->
+    <div id="head-container">
+      <div id="video-blackdiv"></div>
+      <video id="homevid" class="noselect" width="100%" preload="auto" src="../assets/home.mp4" autoplay muted loop></video>
+      <script>
+          document.getElementById('homevid').play();
+      </script>
+    </div>
+    <div id="title-container">
+      <div id="title-text-container">
+        <div id="title-top">Logo design services</div>
+        <div id="title-bottom">Logo designs made with absolute passion, thought,<br>quality, precision, balance and love!</div>
+        <a class="dark-button" onclick="scrollWithOffset('examples', -90);">Examples</a>
+        <a class="dark-button" onclick="scrollWithOffset('order-now', -90);">Order now!</a>
+      </div>
+    </div>
+
+    <!-- sticky navbar -->
+    <div class="noselect" id="topsticky">
+      <div id="topbar">
+        <a href="https://gmiz.github.io">
+          <img id="logo" src="../assets/mlogo.png" alt="Gmiz logo">
+        </a>
+        <ul id="alltoplinks">
+          <li class="toplink-container">
+            <a class="toplink" href="https://gmiz.github.io">Home</a>
+          </li>
+          <li class="toplink-container">
+            <a class="toplink" href="../programming">Programming</a>
+          </li>
+          <li class="toplink-container">
+            <a class="toplink" href="../graphics">Graphics</a>
+          </li>
+          <li class="toplink-container">
+            <a class="toplink" href="../blog">Blog</a>
+          </li>
+          <li class="toplink-container">
+            <a class="toplink" href="../about">About</a>
+          </li>
+          <li class="toplink-container">
+            <a class="toplink" href="../contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- logo design examples -->
+    <style>
+        table {
+            margin: auto;
+            width: 100%;
+            border-spacing: 20px;
+            border-collapse: separate;
+        }
+
+        td {
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        td img {
+            width: 100%;
+        }
+    </style>
+    <div id="examples" class="classic-post">
+      <div class="classic-title">Examples</div>
+      <div class="classic-text">Here are some examples of my logo design work I've done in the past. It should give you a more clear overview of what my style is, and what level of quality you should expect when ordering a logo from me. I really love these logos, so I hope you'll enjoy them as much as I enjoyed making them.</div>
+      <table id="example-logos">
+          <tr>
+              <td class="logo-sample"><img src="logos/logo1.png"></td>
+              <td class="logo-sample"><img src="logos/logo2.png"></td>
+              <td class="logo-sample"><img src="logos/logo3.png"></td>
+              <td class="logo-sample"><img src="logos/logo4.png"></td>
+              <td class="logo-sample"><img src="logos/logo5.png"></td>
+          </tr>
+          <tr>
+              <td class="logo-sample"><img src="logos/logo6.png"></td>
+              <td class="logo-sample"><img src="logos/logo7.png"></td>
+              <td class="logo-sample"><img src="logos/logo8.png"></td>
+              <td class="logo-sample"><img src="logos/logo9.png"></td>
+              <td class="logo-sample"><img src="logos/logo10.png"></td>
+          </tr>
+          <tr>
+              <td class="logo-sample"><img src="logos/logo11.png"></td>
+              <td class="logo-sample"><img src="logos/logo12.png"></td>
+              <td class="logo-sample"><img src="logos/logo13.png"></td>
+              <td class="logo-sample"><img src="logos/logo14.png"></td>
+              <td class="logo-sample"><img src="logos/logo15.png"></td>
+          </tr>
+      </table>
+    </div>
+
+    <div id="order-now" class="classic-post">
+      <div class="classic-title">Order a logo</div>
+      <div class="classic-text">If you need a logo for your business or company, or maybe your personal blog or YouTube channel, or pretty much anything else, I'd be more than glad to be your designer, and to help you achieve your greatest goals.</div>
+      <div class="classic-text">Now, even though you might think a logo design is just a simple picture, the logo design process is a lot more than that. It includes the following:</div>
+      <ul class="classic-list">
+        <li>The entire communication with the client.</li>
+        <li>The thought process, planning and research to help better understand and implement your logo.</li>
+        <li>The initial sketches, drawings and concepts.</li>
+        <li>The digital implementation.</li>
+        <li>The final file generation.</li>
+        <li>The payment process.</li>
+        <li>The final delivery.</li>
+      </ul>
+      <div class="classic-text">This entire process has it's value, and a lot of time and effort goes into each one of the logos I make. That's why my entire logo design process costs $500.</div>
+      <div class="classic-text">No need to wait any longer. Just order a logo now, and let's start a beautiful journey together.</div>
+      <div class="center-box">
+        <a class="dark-button" href="mailto: gmizzed@gmail.com">Order now for $500</a>
+      </div>
+    </div>
+
+    <!-- footer with info -->
+    <footer>
+      <p class="noselect">Copyright © Gmiz 2020</p>
+    </footer>
+    <script>
+        oneByOne("toplink", 1, .1);
+        oneByOne("dark-button", 3, .2);
+    </script>
+  </body>
+</html>
